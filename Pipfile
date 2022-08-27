@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mkdocs = "*"
+mike = "*"
+markdown = "*"
+lightgallery = "*"
+mkdocs-pdf-export-plugin = "*"
+mkdocs-macros-plugin = "*"
+python-dateutil = "*"
+pymdown-extensions = "*"
+mkdocs-minify-plugin = "*"
+mkdocs-material-extensions = "*"
+mkdocs-material = "*"
+mkdocs-git-revision-date-plugin = "*"
+mkdocs-git-revision-date-localized-plugin = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

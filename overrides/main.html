@@ -1,0 +1,103 @@
+{% extends "base.html" %} {% block site_meta %}
+<meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta property="og:title" content="{{ config.site_name }}">
+<meta property="og:type" content="Website">
+<meta property="og:description" content="{{ config.site_description }}">
+<meta name="google-site-verification" content="gHLeFaRRqcCV7lq2VtWlwVR3qFCMF_TnR8U-iiGjdeQ" />
+<meta property="og:image" itemprop="image" content="{{ config.site_description }}">
+<meta property="og:image" content="https://i.imgur.com/FzgLCHM.jpeg">
+<meta property="og:image:type" content="image/png" />
+<meta property="og:url" content="{{ page.canonical_url }}">
+<meta property="og:locale" content="{{ lang.t('language') }}" />
+<meta property="og:locale" content="{{ lang.t('language') }}" />
+
+<meta name="twitter:title" content="{{ config.site_name }}">
+<meta name="twitter:description" content="{{ config.site_description }}">
+<meta name="twitter:image" content="https://i.imgur.com/FzgLCHM.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:site_name" content="{{ config.site_name }}">
+<meta name="twitter:image:alt" content="{{ config.site_name }} Logo">
+<meta property="og:image:alt" content="{{ config.site_name }} Logo">
+
+<meta itemprop="name" content="{{ config.site_name }}">
+<meta itemprop="description" content="{{ config.site_description }}">
+<meta itemprop="image" content="{{ config.site_description }}">
+<meta name="author" content="{{ config.site_author }}">
+<meta name="copyright" content="{{ config.site_author }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#{{ config.theme.color_theme }}">
+<meta name="apple-mobile-web-app-title" content="{{ config.site_name }}">
+
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="1 day">
+<meta name="theme-color" content="#{{ config.theme.color_theme }}">
+
+<meta name="viewport" content="width=device-width,initial-scale=1"> {% if page and page.meta and page.meta.description %}
+<meta name="description" content="{{ page.meta.description }}"> {% elif config.site_description %}
+<meta name="description" content="{{ config.site_description }}"> {% endif %} {% if page and page.meta and page.meta.keywords %}
+<meta name="keywords" content="{{ page.meta.keywords }}"> {% elif site_keywords %}
+<meta name="keywords" content="{{ site_keywords }}"> {% endif %} {% if page and page.meta and page.meta.author %}
+<meta name="author" content="{{ page.meta.author }}"> {% elif config.site_author %}
+<meta name="author" content="{{ config.site_author }}"> {% endif %} {% if page.canonical_url %}
+<link rel="canonical" href="{{ page.canonical_url }}"> {% endif %}
+<link rel="icon" href="{{ config.theme.favicon | url }}">
+<meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-7.2.2"> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2736810871076484" crossorigin="anonymous"></script>
+<!-- <script async src="https://arc.io/widget.min.js#DaqFz1eY"></script> -->
+
+{% endblock %}
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ base_url }}/css/lightgallery.min.css">
+{% endblock styles %}
+
+{% block libs %}
+    {{ super() }}
+    <script src="{{ base_url }}/js/lightgallery.min.js"></script>
+{% endblock libs %}
+
+<!-- <style> in announce block
+    .twitter {
+        color: #1DA1F2;
+    }
+</style><strong><i>v2</i></strong> of <b style="color: #f79d00;">Minato Namikaze</b> will be releasing soon! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a style="color: #09d6dd;" href="https://github.com/The-4th-Hokage/yondaime-hokage/projects/1"
+    target="_blank">Stay tuned</a>&nbsp;
+<span class="twemoji twitter">
+    {# include ".icons/fontawesome/brands/twitter.svg" #}
+    </span> -->
+{% block outdated %}
+    You're not viewing the latest version.
+    <a href="{{ '../' ~ base_url }}"> 
+      <strong>Click here to go to latest.</strong>
+    </a>
+  {% endblock %}
+{% block scripts %}
+{{ super() }}
+<script>
+    var elements = document.getElementsByClassName("lightgallery");
+    for(var i=0; i<elements.length; i++) {
+       lightGallery(elements[i]);
+    }
+</script>
+<script src="https://xnqtmjy63llr.statuspage.io/embed/script.js"></script>
+<!-- <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '920190307595874304', // Konohagakure
+        channel: '920190310657699899',
+        location: ['top', 'right'],
+    })
+</script> -->
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('mikuchan', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#5bc0de',
+    'floating-chat.donateButton.text-color': '#323842'
+  });
+</script>
+<script async="async" data-cfasync="false" src="//pl17523944.highperformancegate.com/86bde6f923ad7ce4a09df3fd7396a340/invoke.js"></script>
+<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
+{% endblock %}
