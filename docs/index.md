@@ -1,17 +1,28 @@
-# Welcome to MkDocs
+---
+title: Preamble
+hide:
+  - navigation
+  - toc
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+tags:
+  - preamble
+  - preface
+---
 
-## Commands
+<center>
+# **Preamble**
+</center>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### This is the very start of the constitution of the organization named "**Akatsuki**" which is based in *Lovely Professional University*.
 
-## Project layout
+This constitution defines the basic structure of the organization, lays out the *standard operating procedures* for any any kind of work or organizating any kind and *the rules of conduct* of the organization.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+**Every organization members be it either the board members or the director or founder or any fresher member of the organization is expected and should abide by the rules of the organization written in this constitution.** For any kind of discrepancy or any kind of violation of the rules of the organization, the member will be held responsible and appropriate actions would be taken as defined in this constitution.
+
+This constitution is not a static document and is expected to be updated from time to time as per the need of the organization.
+This consititution is divided into various *__articles__*, *__sections__* and *__subsections__* for better understanding and readability. Each of it has its own purpose and it defines its own events and situtations and rights and duties of the members of the organization.
+
+We go by the motto of 
+# "By Knowing People's Pain And Shedding The Same Tears, We Can Eventually Get Closer To The Real World!"
+
+![image](assets/img/banner.png){ loading=lazy }

@@ -1,12 +1,15 @@
 {% extends "base.html" %} {% block site_meta %}
 <meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+
 <meta name="referrer" content="no-referrer">
 <meta property="og:title" content="{{ config.site_name }}">
 <meta property="og:type" content="Website">
 <meta property="og:description" content="{{ config.site_description }}">
-<meta name="google-site-verification" content="gHLeFaRRqcCV7lq2VtWlwVR3qFCMF_TnR8U-iiGjdeQ" />
 <meta property="og:image" itemprop="image" content="{{ config.site_description }}">
-<meta property="og:image" content="https://i.imgur.com/FzgLCHM.jpeg">
+<meta property="og:image" content="https://media.discordapp.net/attachments/1014783374495326218/1014783608680108104/banner_another.png?width=1455&height=444">
 <meta property="og:image:type" content="image/png" />
 <meta property="og:url" content="{{ page.canonical_url }}">
 <meta property="og:locale" content="{{ lang.t('language') }}" />
@@ -14,7 +17,7 @@
 
 <meta name="twitter:title" content="{{ config.site_name }}">
 <meta name="twitter:description" content="{{ config.site_description }}">
-<meta name="twitter:image" content="https://i.imgur.com/FzgLCHM.jpeg">
+<meta name="twitter:image" content="https://media.discordapp.net/attachments/1014783374495326218/1014783608680108104/banner_another.png?width=1455&height=444">
 <meta name="twitter:card" content="summary_large_image">
 
 <meta property="og:site_name" content="{{ config.site_name }}">
@@ -44,8 +47,6 @@
 <link rel="canonical" href="{{ page.canonical_url }}"> {% endif %}
 <link rel="icon" href="{{ config.theme.favicon | url }}">
 <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-7.2.2"> 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2736810871076484" crossorigin="anonymous"></script>
-<!-- <script async src="https://arc.io/widget.min.js#DaqFz1eY"></script> -->
 
 {% endblock %}
 {% block styles %}
@@ -81,23 +82,4 @@
        lightGallery(elements[i]);
     }
 </script>
-<script src="https://xnqtmjy63llr.statuspage.io/embed/script.js"></script>
-<!-- <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-    new Crate({
-        server: '920190307595874304', // Konohagakure
-        channel: '920190310657699899',
-        location: ['top', 'right'],
-    })
-</script> -->
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('mikuchan', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#5bc0de',
-    'floating-chat.donateButton.text-color': '#323842'
-  });
-</script>
-<script async="async" data-cfasync="false" src="//pl17523944.highperformancegate.com/86bde6f923ad7ce4a09df3fd7396a340/invoke.js"></script>
-<div id="container-86bde6f923ad7ce4a09df3fd7396a340"></div>
 {% endblock %}
