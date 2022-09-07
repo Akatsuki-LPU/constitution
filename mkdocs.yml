@@ -94,10 +94,9 @@ extra:
 
 nav:
   - Preamble: index.md
-  # - Commands: 
-  #   - commands/index.md
-  #   - Message Commands List: commands/message_commands.md
-  #   - Application Commands List: commands/application_commands.md
+  - Articles: 
+    - 1: articles/1.md
+    - 2: articles/2.md
   # - Contributors: contributors.md
   # - Rules:
   #   - Privacy Policy: rules/privacy_policy.md
